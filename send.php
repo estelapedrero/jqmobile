@@ -19,8 +19,15 @@ $message = '
 </html>
 
 ';
+//fijar el formato del mail
+$cabecera = 'MIME-Version: 1.0' ."\r\n";
+$cabecera .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+//cabeceras adicionales
+$cabecera .= 'To: estelapedrero <estela@estelapedrero.com>' . "\r\n";
+$cabecera .= 'From: webmovil <>estela@estelapedrero.com' . "\r\n";
 
 //enviar el mail a traver de una función de php
-mail($mailto, $subject, $message);
+mail($mailto, $subject, $message, $cabecera);
 
 ?>
