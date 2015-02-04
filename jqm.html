@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		<link rel="stylesheet" href="css/themes/estela.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
 		<title>playing jqm</title>
 	</head>
 
@@ -235,6 +238,16 @@
 			</header>
 
 			<article data-role="content">
+				<h3>form_</h3>
+				<form name="form1" action="enviar.php" method="post">
+					<input name="name" id="form_name" type="text" placeholder="name" />
+					<input name="mail" id="form_mail "type="text" placeholder="email" />
+					<textarea name="comments" id="form_comments" cols="5" rows="10"></textarea>
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><input type="submit" value="send"/></div>
+						<div class="ui-block-b"><input type="reset" value="clear"/></div>
+					</div>
+				</form>	
 
 			</article>
 
